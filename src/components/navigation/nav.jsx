@@ -1,12 +1,11 @@
-import * as bootstrap from "bootstrap";
-// import { BsFillCartCheckFill } from "react-icons";
-import { SlUser } from "react-icons/sl";
+import { SlUser, SlBasket } from "react-icons/sl";
+import { BsHeart } from "react-icons/bs";
 
 import "./style.css";
 function Nav() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-pink">
+      <nav className="navbar navbar-expand-lg bg-black text-success">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
@@ -27,24 +26,28 @@ function Nav() {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav text-white">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a
+                  className="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                >
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link text-white" href="#">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link text-white" href="#">
                   shop
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Contact US</a>
+                <a className="nav-link text-white">Contact US</a>
               </li>
               <li className="nav-item">
                 <form className="d-flex" role="search">
@@ -55,7 +58,7 @@ function Nav() {
                     aria-label="Search"
                   />
                   <button
-                    className="btn btn-outline-dark text-pink"
+                    className="btn btn-outline-dark text-white"
                     type="submit"
                   >
                     Search
@@ -63,10 +66,20 @@ function Nav() {
                 </form>
               </li>
             </ul>
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ml-5">
               <li className="nav-item">
-                <a className="nav-link">
+                <a className="nav-link text-white">
                   <SlUser />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white">
+                  <SlBasket />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white">
+                  <BsHeart />
                 </a>
               </li>
             </ul>
