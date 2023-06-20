@@ -1,5 +1,9 @@
-import Nav from "../../components/navigation/nav";
+import Carousel from "../../components/carousel/carousel";
 function Home() {
-  return <Nav />;
+  return (
+    <>
+      <Carousel />
+    </>
+  );
 }
 export default Home;

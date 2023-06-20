@@ -5,7 +5,7 @@ import "./style.css";
 function Nav() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-black text-success">
+      <nav className="navbar navbar-expand-lg bg-pink">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <img
@@ -26,28 +26,24 @@ function Nav() {
             <span className="navbar-toggler-icon" />
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav text-white">
+            <ul className="navbar-nav">
               <li className="nav-item">
-                <a
-                  className="nav-link active text-white"
-                  aria-current="page"
-                  href="#"
-                >
+                <a className="nav-link active" aria-current="page" href="#">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <a className="nav-link" href="#">
                   About
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white" href="#">
+                <a className="nav-link" href="#">
                   shop
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white">Contact US</a>
+                <a className="nav-link">Contact US</a>
               </li>
               <li className="nav-item">
                 <form className="d-flex" role="search">
@@ -57,10 +53,7 @@ function Nav() {
                     placeholder="Search Product"
                     aria-label="Search"
                   />
-                  <button
-                    className="btn btn-outline-dark text-white"
-                    type="submit"
-                  >
+                  <button className="btn btn-outline-dark" type="submit">
                     Search
                   </button>
                 </form>
@@ -68,17 +61,17 @@ function Nav() {
             </ul>
             <ul className="navbar-nav ml-5">
               <li className="nav-item">
-                <a className="nav-link text-white">
+                <a className="nav-link">
                   <SlUser />
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white">
+                <a className="nav-link">
                   <SlBasket />
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-white">
+                <a className="nav-link">
                   <BsHeart />
                 </a>
               </li>
